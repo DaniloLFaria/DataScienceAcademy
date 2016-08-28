@@ -74,14 +74,24 @@ library(dplyr)
 ex9 = slice(data.frame(iris), 1:15)
 ex9
 
+plot(ex9$Sepal.Length, ex9$Sepal.Width, type="h")
+?plot()
+
 ?filter()
 ex10 = filter(ex9, Sepal.Length > 6)
 ex10
 
 
+sessionInfo()
 
+x = 2
+while(x < 4)
+{
+  x = x + 1
+  print(x)
+}
 
-
+mtcars[4,7]
 
 
 
